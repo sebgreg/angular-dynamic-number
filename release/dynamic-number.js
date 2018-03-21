@@ -41,6 +41,9 @@
   }
 
   function addPrependAppend(value, prepend, append) {
+    if (value === '') {
+      return value;
+    }
     var newViewValue = value;
     if (append) {
       newViewValue = newViewValue + append;
